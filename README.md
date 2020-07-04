@@ -39,11 +39,11 @@ this, try a combination like:
 - An environment to work in - something like `Jupyter` or `Spyder`
 For Linux people, your package manager should be able to handle all of this. If it somehow
 can't, see if you can at least install Python and pip and then use pip to install the abovepackages.
- ## Dataset:
+## Dataset:
 The SMS/Email Spam Collection is a set of SMS tagged messages that have been collected for
 SMS/Email Spam research. It contains one set of SMS messages in English of 5,567 messages,
 tagged according being ham (legitimate) or spam.
-> You can collect raw dataset from [here](https://github.com/bharatc9530/Spam-Email-Classification/blob/master/datasets_483_982_spam.csv). The files contain one message per line. Each line is composed by two columns:
+> You can collect raw dataset from [here](https://github.com/bharatc9530/Spam-Email-Classification/blob/master/datasets_483_982_spam.csv).The files contain one message per line. Each line is composed by two columns:
 - `Class`- contains the label (ham or spam) 
 - `Message` - contains the raw text.
 ## ModelPipeline:
