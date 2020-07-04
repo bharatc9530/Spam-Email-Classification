@@ -5,6 +5,8 @@
 SpamClassifier
 <br>
 </h1>
+<h1 align="center">Model Deploy Using Flask on Heroku Platform</h1>
+<h2>https://spam-email-classification.herokuapp.com/<h2>
 <h4 align="center">In this project I build a model for classifying the SMS/Email into spam or
 ham through the text of the SMS/Email using standard classifiers.</h4>
 
