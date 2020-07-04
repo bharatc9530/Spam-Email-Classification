@@ -2,8 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np
 import pandas as pd
 import string
-import nltk
-nltk.download()
+from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, ENGLISH_STOP_WORDS
 import joblib
 
@@ -26,7 +25,7 @@ def home():
 	za.columns = ['label','message']
 	za['label'] = za['label'].replace({'ham':0,'spam':1}, inplace=True)
 	def text_process(mess):
-		STOPWORDS = nltk.corpus.stopwords.words('english') + ['u', 'ü', 'ur', '4', '2', 'im', 'dont', 'doin', 'ure']
+		STOPWORDS = stopwords.words('english') + ['u', 'ü', 'ur', '4', '2', 'im', 'dont', 'doin', 'ure']
 		nopunc = [char for char in mess if char not in string.punctuation]
 		nopunc = ''.join(nopunc)
 		return ' '.join([word for word in nopunc.split() if word.lower() not in STOPWORDS])
