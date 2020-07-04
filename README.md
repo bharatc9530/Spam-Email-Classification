@@ -34,7 +34,6 @@ this, try a combination like:
 - `scikit-learn` / `sklearn`
 - `Pandas`
 - `NumPy`
--  nltk
 - `matplotlib`
 - An environment to work in - something like `Jupyter` or `Spyder`
 For Linux people, your package manager should be able to handle all of this. If it somehow
