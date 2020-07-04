@@ -18,6 +18,7 @@ ham through the text of the SMS/Email using standard classifiers.</h4>
 <br>
 <img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/ClassifierDemo.gif">
 </p>
+
 ## How It Does:
 Extract the text and the target class from the dataset. Extract the features of the test using TF
 IDF vectorizer for the Input features.Split the skewed data into shuffled sets using stratified
@@ -26,31 +27,41 @@ shuffle split in sklearn library. Use standard classifiers to classify the data 
 <br>
 <img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/modelLearning.png">
 </p>
+
 ## Prerequisites:
+
 I would highly recommend that before the hack night you have some kind of toolchain and
 development environment already installed and ready. If you have no idea where to start with
 this, try a combination like:
-- `Python`
-- `scikit-learn` / `sklearn`
-- `Pandas`
-- `NumPy`
-- `matplotlib`
-- An environment to work in - something like `Jupyter` or `Spyder`
+- Python
+- scikit-learn / sklearn \
+- Pandas
+- nltk
+- NumPy
+- matplotlib
+- An environment to work in - something like Jupyter or Spyder
 For Linux people, your package manager should be able to handle all of this. If it somehow
 can't, see if you can at least install Python and pip and then use pip to install the abovepackages.
+
 ## Dataset:
+
 The SMS/Email Spam Collection is a set of SMS tagged messages that have been collected for
 SMS/Email Spam research. It contains one set of SMS messages in English of 5,567 messages,
 tagged according being ham (legitimate) or spam.
-> You can collect raw dataset from [here](https://github.com/bharatc9530/Spam-Email-Classification/blob/master/datasets_483_982_spam.csv).The files contain one message per line. Each line is composed by two columns:
-- `Class`- contains the label (ham or spam) 
-- `Message` - contains the raw text.
+
+> You can collect raw dataset from [here](https://github.com/bharatc9530/Spam-Email-Classification/blob/master/datasets_483_982_spam.csv) .The files contain one message per line. Each line is composed by two columns:
+- Class- contains the label (ham or spam) 
+- Message - contains the raw text.
+
 ## ModelPipeline:
+
 <p align="center">
 <br>
 <img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/modelLayout.jpg">
 </p>
+
 ## Components:
+
 - Using TF-IDF for feature extraction of the text data for the messages.
 - Use splits for skewed data(Since the number of ham are far more than the number of spam
 messages,the data is skewed)
