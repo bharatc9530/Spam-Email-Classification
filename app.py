@@ -4,11 +4,11 @@ import pandas as pd
 import string
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer, ENGLISH_STOP_WORDS
-import pickle
+import joblib
 
 
-filename = 'NB_spam_model.pkl'
-clf = pickle.load(open(filename, 'rb'))
+NB_spam_model = open('NB_spam_model.pkl','rb')
+clf = joblib.load(NB_spam_model)
 app = Flask(__name__)
 
 
@@ -43,18 +43,3 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
