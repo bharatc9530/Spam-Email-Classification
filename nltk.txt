@@ -1,5 +1,1 @@
-wordnet
-pros_cons
-reuters
-vader_lexicon
-corpus
+stopwords
