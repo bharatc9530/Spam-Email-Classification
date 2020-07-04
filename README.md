@@ -10,15 +10,13 @@ ham through the text of the SMS/Email using standard classifiers.</h4>
  ## What It Does: 
 <p align="center">
 <br>
-<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/Tex
-%20Classification.png">
+<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/Text%20Classification.png">
 </p>
 
 ## Live Demo:
 <p align="center">
 <br>
-<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots
-ClassifierDemo.gif">
+<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/ClassifierDemo.gif">
 </p>
  ## How It Does:
 Extract the text and the target class from the dataset. Extract the features of the test using TF
@@ -26,8 +24,7 @@ IDF vectorizer for the Input features.Split the skewed data into shuffled sets u
 shuffle split in sklearn library. Use standard classifiers to classify the data into spam or ham.
 <p align="center">
 <br>
-<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots
-modelLearning.png">
+<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/modelLearning.png">
 </p>
  ## Prerequisites:
 I would highly recommend that before the hack night you have some kind of toolchain and
@@ -46,15 +43,14 @@ can't, see if you can at least install Python and pip and then use pip to instal
 The SMS/Email Spam Collection is a set of SMS tagged messages that have been collected for
 SMS/Email Spam research. It contains one set of SMS messages in English of 5,567 messages,
 tagged according being ham (legitimate) or spam.
- > You can collect raw dataset from [here](https://raw.githubusercontent.com/bharatc9530/Spam-Email-Classification/master/spam.tsv).
+ > You can collect raw dataset from [here]().
  The files contain one message per line. Each line is composed by two columns:
 - `Class`- contains the label (ham or spam) 
 - `Message` - contains the raw text.
  ## ModelPipeline:
 <p align="center">
 <br>
-<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots
-modelLayout.jpg">
+<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/modelLayout.jpg">
 </p>
  ## Components:
 - Using TF-IDF for feature extraction of the text data for the messages.
@@ -66,8 +62,7 @@ messages,the data is skewed)
  ## AccuracyResult:
 <p align="center">
 <br>
-<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots
-predictionScore.png">
+<img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/predictionScore.png">
 </p>
  ## Future Scope:
 - Adding this feature in a dynamic website which supports contact-us typo feature.
