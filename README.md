@@ -7,6 +7,7 @@ SpamClassifier
 </h1>
 <h4 align="center">In this project I build a model for classifying the SMS/Email into spam or
 ham through the text of the SMS/Email using standard classifiers.</h4>
+
 ## What It Does: 
 <p align="center">
 <br>
@@ -20,6 +21,7 @@ ham through the text of the SMS/Email using standard classifiers.</h4>
 </p>
 
 ## How It Does:
+
 Extract the text and the target class from the dataset. Extract the features of the test using TF
 IDF vectorizer for the Input features.Split the skewed data into shuffled sets using stratified
 shuffle split in sklearn library. Use standard classifiers to classify the data into spam or ham.
@@ -73,6 +75,8 @@ messages,the data is skewed)
 <br>
 <img src="https://github.com/bharatc9530/Spam-Email-Classification/blob/master/Screenshots/predictionScore.png">
 </p>
+
 ## Future Scope:
+
 - Adding this feature in a dynamic website which supports contact-us typo feature.
 - Show live user inputs for Ham and Spam .
